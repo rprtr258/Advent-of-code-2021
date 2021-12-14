@@ -9,5 +9,5 @@ int main() {
             ans += tmp;
         }
     }
-    printf("%lld", ans);
+    printf("%I64d", ans);
 }

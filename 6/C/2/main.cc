@@ -2,6 +2,6 @@
 #include "../common.h"
 
 int main() {
-    printf("%lld", get_ans(256));
+    printf("%I64d", get_ans(256));
     return 0;
 }

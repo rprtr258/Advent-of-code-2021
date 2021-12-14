@@ -19,5 +19,5 @@ int main() {
             }
         }
     }
-    printf("%lld", scores[len / 2]);
+    printf("%I64d", scores[len / 2]);
 }

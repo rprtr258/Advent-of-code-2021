@@ -1,12 +1,17 @@
 version: '3'
 
 tasks:
-  task-1:
-    - g++ common.cc 1/main.cc
+  run:
     - cat ../input.txt | ./a.exe
     - rm a.exe
 
+  task-1:
+    - g++ common.cc 1/main.cc
+    - task: run
+
   task-2:
     - g++ common.cc 2/main.cc
-    - cat ../input.txt | ./a.exe
-    - rm a.exe
+    - task: run
+
+  lines:
+    - wc -l common* 1/* 2/*
