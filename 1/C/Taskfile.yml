@@ -1,0 +1,13 @@
+version: '3'
+
+tasks:
+  task-1:
+    - gcc common.c 1/main.c
+    - cat ../input.txt | ./a.exe
+    - rm a.exe
+
+  task-2:
+    - gcc common.c 2/main.c
+    - cat ../input.txt | ./a.exe
+    - rm a.exe
+
