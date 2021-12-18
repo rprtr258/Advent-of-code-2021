@@ -1,0 +1,25 @@
+version: '3'
+
+tasks:
+  run:
+    - cat ../input.txt | ./a.exe
+    - rm a.exe
+
+  task-1:
+    - g++ -Wall 1/main.cc
+    - task: run
+
+  task-2-a-star:
+    - g++ -Wall 2/a_star.cc
+    - task: run
+
+  task-2-dijkstra:
+    - g++ -Wall 2/dijkstra.cc
+    - task: run
+
+  task-2-dp-hack:
+    - g++ -Wall 2/dp_hacking.cc
+    - task: run
+
+  lines:
+    - wc -l common* 1/* 2/*
