@@ -6,11 +6,11 @@ tasks:
     - rm a.exe
 
   task-1:
-    - g++ -Wall 1/main.cc
+    - g++ -Wall common.cc 1/main.cc
     - task: run
 
   task-2:
-    - g++ -Wall 2/main.cc
+    - g++ -Wall common.cc 2/main.cc
     - task: run
 
   task-2-obfuscated:
