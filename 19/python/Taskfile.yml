@@ -1,0 +1,11 @@
+version: '3'
+
+tasks:
+  task-1:
+    - cat ../input.txt | python3 1/main.py
+
+  task-2:
+    - cat ../input.txt | python3 2/main.py
+
+  lines:
+    - wc -l common* 1/* 2/*
